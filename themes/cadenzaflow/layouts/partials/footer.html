@@ -1,0 +1,54 @@
+    <!-- footer -->
+    <footer class="page-footer">
+      <div class="row">
+        <div class="col-xs-12">
+
+          <p class="pull-right">
+            <a href="#" target="_self">Back to top</a>
+          </p>
+          <p>
+            <a href="http://cadenzaflow.org/">cadenzaflow.org</a>, 
+            <a href="http://cadenzaflow.com/">cadenzaflow.com</a>, and 
+            <a href="http://docs.cadenzaflow.org/">docs.cadenzaflow.org</a> 
+            are part of the CadenzaFlow project — 
+            <a href="https://cadenzaflow.com/legal/privacy-and-data-protection">Privacy Statement</a> – 
+            <a href="https://cadenzaflow.com/contact">CadenzaFlow © 2025</a>
+          </p>
+
+          <p>
+            The CadenzaFlow documentation is based on 
+            <a href="https://docs.camunda.org/">Camunda 7 Docs</a> from Camunda. 
+            Some redesign &amp; naming adaptation was made in line with the CadenzaFlow roadmap.
+          </p>
+
+          <p>
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/3.0/80x15.png" /></a> The content on this site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </div><!-- / .page-wrapper -->
+
+
+  {{ $scripts := resources.Get "js/docs.js" | fingerprint }}
+
+  <script type="text/javascript" src="{{ $scripts.Permalink }}" integrity="{{ $scripts.Data.Integrity }}"></script>
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+    _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+    _gaq.push(['_setAccount', 'UA-39060941-1']);
+    _gaq.push(['_setDomainName', 'cadenzaflow.org']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  <!-- Start of HubSpot Embed Code -->
+  <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4513465.js"></script>
+  <!-- End of HubSpot Embed Code -->
+</body>
+</html>
