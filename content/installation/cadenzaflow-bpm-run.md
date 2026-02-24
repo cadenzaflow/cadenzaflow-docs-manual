@@ -28,11 +28,7 @@ java -version
 If you need to install Java Runtime Environment, you can [find the download from Oracle here](https://www.oracle.com/java/technologies/javase-downloads.html).
 
 # Installation Procedure
-<<<<<<< HEAD
-1. Download the pre-packed distribution of the [community or enterprise edition here] (https://cadenzaflow.com/download).
-=======
 1. Download the pre-packed distribution of the [community or enterprise edition here](https://cadenzaflow.com/download).
->>>>>>> cadenzaflow-1.1
 1. Unpack the distro to a directory.
 1. Configure the distro as described in the [User Guide]({{< ref "/user-guide/cadenzaflow-bpm-run.md" >}}).
 1. Start CadenzaFlow Run by executing the start script (start.bat for Windows, start.sh for Linux/Mac).
