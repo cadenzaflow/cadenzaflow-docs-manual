@@ -9,7 +9,6 @@ menu:
     identifier: "user-guide-cockpit-pi-restart"
     parent: "user-guide-cockpit-bpmn"
     pre: "Restart process instances after termination."
-    name: "Instance Restart"
 
 ---
 {{< enterprise >}}
