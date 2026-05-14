@@ -11,9 +11,9 @@ menu:
 
 ---
 
-<meta http-equiv="refresh" content="0; url=https://docs.cadenzaflow.org/rest/cadenzaflow-bpm-platform/1.1/">
+<meta http-equiv="refresh" content="0; url=https://docs.cadenzaflow.org/rest/cadenzaflow-bpm-platform/1.2/">
 
-<p>Redirecting to <a href="https://docs.cadenzaflow.org/rest/cadenzaflow-bpm-platform/1.1/">REST API Documentation</a>...</p>
+<p>Redirecting to <a href="https://docs.cadenzaflow.org/rest/cadenzaflow-bpm-platform/1.2/">REST API Documentation</a>...</p>
 
-<p>If you are not redirected automatically, please <a href="https://docs.cadenzaflow.org/rest/cadenzaflow-bpm-platform/1.1/">click here</a>.</p>
+<p>If you are not redirected automatically, please <a href="https://docs.cadenzaflow.org/rest/cadenzaflow-bpm-platform/1.2/">click here</a>.</p>
 
