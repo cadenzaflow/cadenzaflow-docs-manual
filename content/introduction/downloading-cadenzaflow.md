@@ -53,6 +53,52 @@ The full distribution bundles
 See the [Installation Guide][installation-guide-full] for additional details.
 
 
+# Maven Artifacts
+
+The libraries of CadenzaFlow are published to Maven Central: the process engine, the Spring Boot
+starters, the External Task Client, the BOM and the other modules you put into your own
+application. A Maven or Gradle build finds them without any extra setup.
+
+Since 1.3.0, some artifacts are published only to the CadenzaFlow Nexus
+(`https://nexus.cadenzaflow.com/repository/cadenzaflow-nexus`):
+
+* the distributions (CadenzaFlow Run, Tomcat) and the WAR files for application servers
+  (`cadenzaflow-webapp`, `cadenzaflow-engine-rest`, `cadenzaflow-engine-rest-jakarta`),
+* the Java EE integration (`cadenzaflow-engine-cdi`, `cadenzaflow-engine-cdi-jakarta`,
+  `cadenzaflow-ejb-client`, `cadenzaflow-ejb-client-jakarta`),
+* the OpenAPI description of the REST API (`cadenzaflow-engine-rest-openapi`),
+* the javax and Spring 5 variants `cadenzaflow-engine-rest-core`, `cadenzaflow-engine-spring` and
+  `cadenzaflow-spin-dataformat-xml-dom`. Maven Central has their Jakarta and Spring 6 / 7 variants:
+  `cadenzaflow-engine-rest-core-jakarta`, `cadenzaflow-engine-spring-6`, `cadenzaflow-engine-spring-7`
+  and `cadenzaflow-spin-dataformat-xml-dom-jakarta`,
+* the shaded jars `cadenzaflow-spin-dataformat-all` and `cadenzaflow-connect-connectors-all`,
+* the `test-sources` jars.
+
+The POMs of CadenzaFlow declare no repositories. If you need one of these artifacts, add the
+CadenzaFlow Nexus to your build. In Maven:
+
+```xml
+<repositories>
+  <repository>
+    <id>cadenzaflow-nexus</id>
+    <url>https://nexus.cadenzaflow.com/repository/cadenzaflow-nexus</url>
+  </repository>
+</repositories>
+```
+
+In Gradle:
+
+```groovy
+repositories {
+  mavenCentral()
+  maven { url 'https://nexus.cadenzaflow.com/repository/cadenzaflow-nexus' }
+}
+```
+
+If your organization resolves all artifacts through its own repository manager, add the
+CadenzaFlow Nexus there.
+
+
 # Download CadenzaFlow Modeler
 
 CadenzaFlow Modeler is a modeling Tool for BPMN 2.0 and DMN 1.3. CadenzaFlow Modeler can be downloaded
